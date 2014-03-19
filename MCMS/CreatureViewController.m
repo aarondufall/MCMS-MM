@@ -42,14 +42,27 @@
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    self.creature.name = textField.text;
-//    self.name = textField.text;
+//    self.creature.name = textField.text;
+//    self.nameTextField.alpha = 0;
+//    self.name.text = textField.text;
+    [self saveCreature];
+    [self.view endEditing:YES];
     return YES;
 }
 
 - (IBAction)onSaveButtonPressed:(id)sender {
-    self.creature.name = self.nameTextField.text;
+//    self.creature.name = self.nameTextField.text;
+//    self.nameTextField.alpha = 0;
+//    self.name.text = self.nameTextField.text;
+    [self saveCreature];
     [self.view endEditing:YES];
+}
+
+-(void)saveCreature
+{
+    self.creature.name = self.nameTextField.text;
+    self.nameTextField.alpha = 0;
+    self.name.text = self.nameTextField.text;
 }
 
 
