@@ -53,6 +53,7 @@
     MagicalCreature *newCreature = [[MagicalCreature alloc]init];
     newCreature.name = self.magicalCreatureTextField.text;
     [self.creatures addObject:newCreature];
+    self.magicalCreatureTextField.text = nil;
     [self.myTableView reloadData];
     [self.view endEditing:YES];
     

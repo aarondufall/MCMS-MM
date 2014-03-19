@@ -70,7 +70,7 @@
         <!--Creature View Controller-->
         <scene sceneID="ugm-YJ-Tfs">
             <objects>
-                <viewController id="u1H-PZ-VMB" customClass="CreatureViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreatureViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="u1H-PZ-VMB" customClass="CreatureViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0y5-p9-ffd"/>
                         <viewControllerLayoutGuide type="bottom" id="ANK-bK-Hsz"/>
