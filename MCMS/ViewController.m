@@ -44,6 +44,11 @@
     
 	// Do any additional setup after loading the view, typically from a nib.
 }
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [self.myTableView reloadData];
+}
 - (IBAction)onAddButtonPressed:(id)sender {
     MagicalCreature *newCreature = [[MagicalCreature alloc]init];
     newCreature.name = self.magicalCreatureTextField.text;
